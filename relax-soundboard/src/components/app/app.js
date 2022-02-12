@@ -1,8 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Redirect, Routes } from 'react-router-dom';
-import Header from "../header/header";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from "../navbar/navbar";
 import { Home, HowItWorks, NoPage } from "../pages"
-import { useTheme } from "../../contexts/theme";
+import { useTheme } from "../../hooks/useTheme";
 
 import "./app.css"
 
@@ -11,7 +11,7 @@ const App = () => {
     return(
         <Router>
             <div className="app" style={{ backgroundColor: bodytheme.backgroundColor, color: bodytheme.color }}>
-                <Header />
+                <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/how-it-works" element={<HowItWorks />} />
@@ -20,6 +20,8 @@ const App = () => {
             </div>
         </Router>
     );
-}
+};
 
 export default App;
+
+

@@ -1,0 +1,33 @@
+img {
+  width: 70px;
+  height: 70px;
+  filter: invert(0.5);
+  cursor: pointer;
+}
+
+.img-light:hover{
+  filter: none;
+}
+
+.img-dark:hover {
+  filter: invert(1);
+}
+
+.img-light.playing {
+  filter: none;
+}
+
+.img-dark.playing {
+  filter: invert(1);
+}
+
+.btn-wrapper {
+  height: 120px;
+  width: 170px;
+}
+
+.sounds-list-element{
+  text-align: center;
+}
+
+
