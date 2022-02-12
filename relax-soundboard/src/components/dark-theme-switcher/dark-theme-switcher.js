@@ -1,6 +1,6 @@
 import React from "react";
 import DarkModeToggle from "react-dark-mode-toggle";
-import { useTheme } from "../../contexts/theme";
+import { useTheme } from "../../hooks/useTheme";
 
 const DarkThemeSwitcher = () => {
     const {isDark, toggleTheme} = useTheme();
@@ -8,7 +8,7 @@ const DarkThemeSwitcher = () => {
         <DarkModeToggle
             onChange={toggleTheme}
             checked={isDark}
-            size={80}/>
+            size={60}/>
     );
 };
 
